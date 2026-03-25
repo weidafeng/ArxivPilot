@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 260px;
+      padding: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 14px;
+      color: #333;
+    }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 15px;
+      color: #b31b1b;
+    }
+    #status {
+      margin-bottom: 12px;
+      color: #555;
+      line-height: 1.5;
+    }
+    #status.error {
+      color: #c00;
+    }
+    button {
+      width: 100%;
+      padding: 8px;
+      background: #b31b1b;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    button:hover {
+      background: #8f1414;
+    }
+    button:disabled {
+      background: #ccc;
+      cursor: default;
+    }
+    #manual {
+      display: none;
+      margin-bottom: 12px;
+    }
+    #manual input {
+      width: 100%;
+      padding: 6px 8px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 13px;
+      margin-top: 8px;
+    }
+    #manual input:focus {
+      outline: none;
+      border-color: #b31b1b;
+    }
+    #manual input.invalid {
+      border-color: #c00;
+    }
+  </style>
+</head>
+<body>
+  <h2>ArXiv Reader</h2>
+  <div id="status">正在检测当前页面...</div>
+  <div id="manual">
+    <input id="urlInput" type="text" placeholder="粘贴 arxiv 链接或论文 ID" />
+  </div>
+  <button id="btn" disabled>打开辅助阅读页面</button>
+  <script src="popup.js"></script>
+</body>
+</html>
