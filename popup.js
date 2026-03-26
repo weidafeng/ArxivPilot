@@ -46,6 +46,7 @@ chrome.tabs.query({ active: true, currentWindow: true }, ([tab]) => {
   } else {
     statusEl.textContent = "未检测到 arxiv 论文，请手动输入：";
     manualEl.style.display = "block";
+    urlInput.focus();
 
     urlInput.addEventListener("input", () => {
       const inputId = extractArxivId(urlInput.value.trim());
