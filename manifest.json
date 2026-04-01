@@ -1,8 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "ArXiv Reader",
-  "description": "一键打开 arxiv 论文的多个辅助阅读页面",
+  "name": "ArxivPilot",
+  "description": "One-click open multiple reading-assistance tabs for any arXiv paper: translation, AI summary, and more. Supports abs/pdf/html URLs and manual paper ID input.",
   "version": "1.0.0",
+  "homepage_url": "https://github.com/weidafeng",
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
@@ -11,6 +12,14 @@
       "128": "icons/icon128.png"
     }
   },
-  "permissions": ["tabs", "tabGroups"],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["tabs", "tabGroups", "contextMenus"],
   "host_permissions": ["https://arxiv.org/*"]
 }

@@ -4,16 +4,34 @@
   <meta charset="UTF-8">
   <style>
     body {
-      width: 260px;
-      padding: 16px;
+      width: 280px;
+      padding: 16px 16px 12px;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       font-size: 14px;
       color: #333;
     }
+    #header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    #header img {
+      width: 36px;
+      height: 36px;
+      border-radius: 6px;
+      flex-shrink: 0;
+    }
     h2 {
-      margin: 0 0 12px;
-      font-size: 15px;
+      margin: 0;
+      font-size: 16px;
       color: #b31b1b;
+      line-height: 1.2;
+    }
+    #subtitle {
+      font-size: 11px;
+      color: #888;
+      margin-top: 1px;
     }
     #status {
       margin-bottom: 12px;
@@ -60,15 +78,56 @@
     #manual input.invalid {
       border-color: #c00;
     }
+    #footer {
+      margin-top: 12px;
+      padding-top: 10px;
+      border-top: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+      color: #999;
+    }
+    #footer a {
+      color: #999;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+    #footer a:hover {
+      color: #b31b1b;
+    }
+    #footer .sep {
+      color: #ddd;
+    }
   </style>
 </head>
 <body>
-  <h2>ArXiv Reader</h2>
+  <div id="header">
+    <img src="icons/icon128.png" alt="ArxivPilot" />
+    <div>
+      <h2>ArxivPilot</h2>
+      <div id="subtitle">一键打开多个辅助阅读页面</div>
+    </div>
+  </div>
   <div id="status">正在检测当前页面...</div>
   <div id="manual">
     <input id="urlInput" type="text" placeholder="粘贴 arxiv 链接或论文 ID" />
   </div>
   <button id="btn" disabled>打开辅助阅读页面</button>
+  <div id="footer">
+    <a href="https://github.com/weidafeng" target="_blank">
+      <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+      GitHub
+    </a>
+    <span class="sep">|</span>
+    <a href="#" id="donateLink">
+      ☕ 打赏支持
+    </a>
+    <span class="sep">|</span>
+    <span title="微信公众号：特里斯丹">公众号：特里斯丹</span>
+  </div>
   <script src="popup.js"></script>
 </body>
 </html>
