@@ -1,4 +1,4 @@
-# ArXiv Reader
+# ArxivPilot
 
 一个 Chrome 浏览器插件，在 arXiv 论文页面一键打开多个辅助阅读工具，并自动将所有标签页归为同一组。
 
@@ -70,6 +70,16 @@ ArxivPilot/
 ## 贡献
 
 欢迎提交 Pull Request。如有重大改动，请先开 Issue 讨论。
+
+## 支持作者
+
+如果 ArxivPilot 帮你节省了时间，欢迎请作者喝杯咖啡，支持持续维护！
+
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-☕-yellow?style=flat-square)](https://www.buymeacoffee.com/weidafeng)
+
+如果觉得好用，也欢迎在 Chrome 应用商店给个 **五星好评** ⭐⭐⭐⭐⭐，帮助更多研究者发现这个工具。
+
+关注微信公众号 **特里斯丹**，获取更多实用工具。
 
 ## License
 
