@@ -1,0 +1,20 @@
+# Packaged extension
+arxivpilot.zip
+
+# Raw screen recordings
+videos/*.mov
+
+# Chrome Web Store assets (not part of the extension source)
+images/store/
+
+# Exported conversation logs
+*.txt
+
+# Internal docs
+PRODUCT.md
+PUBLISHING.md
+CLAUDE.md
+
+# OS
+.DS_Store
+Thumbs.db

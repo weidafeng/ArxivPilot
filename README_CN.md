@@ -6,6 +6,18 @@
 ![Manifest V3](https://img.shields.io/badge/Manifest-V3-green)
 ![License](https://img.shields.io/badge/license-MIT-brightgreen)
 
+## 演示
+
+![基础用法](videos/basic_usage.gif)
+
+| 右键菜单支持 | 手动输入模式 |
+|---|---|
+| ![右键](images/right_click.png) | ![手动输入](images/basic_usage.png) |
+
+| 幻觉翻译 (HJFY) | KIMI 解读 | AlphaXiv |
+|---|---|---|
+| ![HJFY](images/hjfy.png) | ![KIMI](images/papers_cool.png) | ![AlphaXiv](images/alphaxiv.png) |
+
 ## 功能
 
 - **一键打开**：自动为当前 arXiv 论文打开 3 个辅助阅读标签页
@@ -31,7 +43,7 @@
 
 1. 克隆本仓库：
    ```bash
-   git clone https://github.com/weidafeng/ModernArxivPaperReading.git
+   git clone https://github.com/weidafeng/ArxivPilot.git
    ```
 2. 打开 Chrome，地址栏输入 `chrome://extensions/`
 3. 右上角开启**开发者模式**
@@ -48,7 +60,7 @@
 ## 项目结构
 
 ```
-ModernArxivPaperReading/
+ArxivPilot/
 ├── manifest.json   # Chrome 插件配置（Manifest V3）
 ├── popup.html      # 弹窗界面
 ├── popup.js        # 核心逻辑

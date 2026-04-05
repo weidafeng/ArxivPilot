@@ -8,6 +8,18 @@ A Chrome extension that opens multiple reading-assistance tabs for any arXiv pap
 ![Manifest V3](https://img.shields.io/badge/Manifest-V3-green)
 ![License](https://img.shields.io/badge/license-MIT-brightgreen)
 
+## Demo
+
+![Basic Usage](videos/basic_usage.gif)
+
+| Right-click support | Manual input |
+|---|---|
+| ![Right-click](images/right_click.png) | ![Manual input](images/basic_usage.png) |
+
+| 幻觉翻译 (HJFY) | KIMI 解读 | AlphaXiv |
+|---|---|---|
+| ![HJFY](images/hjfy.png) | ![KIMI](images/papers_cool.png) | ![AlphaXiv](images/alphaxiv.png) |
+
 ## Features
 
 - **One-click**: Automatically opens 3 auxiliary reading tools for the current arXiv paper
@@ -33,7 +45,7 @@ A Chrome extension that opens multiple reading-assistance tabs for any arXiv pap
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/weidafeng/ModernArxivPaperReading.git
+   git clone https://github.com/weidafeng/ArxivPilot.git
    ```
 2. Open Chrome and navigate to `chrome://extensions/`
 3. Enable **Developer mode** (top-right toggle)
@@ -50,7 +62,7 @@ If you are not on an arXiv page, paste a URL or paper ID into the input box and 
 ## Project Structure
 
 ```
-ModernArxivPaperReading/
+ArxivPilot/
 ├── manifest.json   # Chrome Extension Manifest V3
 ├── popup.html      # Popup UI
 ├── popup.js        # Core logic
