@@ -77,9 +77,9 @@ Pull requests are welcome. For major changes, please open an issue first.
 
 If ArxivPilot saves you time, a coffee would mean a lot and help keep this project alive!
 
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-☕-yellow?style=flat-square)](https://www.buymeacoffee.com/weidafeng)
+<img src="images/wechat.jpg" width="200" alt="WeChat Donate QR Code" />
 
-If you find it useful, please consider leaving a **5-star review** on the Chrome Web Store — it really helps others discover the extension.
+Scan with WeChat to support. If you find it useful, please also consider leaving a **5-star review** on the Chrome Web Store — it really helps others discover the extension.
 
 Follow for more tools: **WeChat Official Account: 特里斯丹**
 
