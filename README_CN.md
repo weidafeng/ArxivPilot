@@ -1,8 +1,10 @@
 # ArxivPilot
 
+[English](README.md) | [中文](README_CN.md)
+
 一个 Chrome 浏览器插件，在 arXiv 论文页面一键打开多个辅助阅读工具，并自动将所有标签页归为同一组。
 
-![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-blue?logo=googlechrome)
+[![Chrome Web Store](https://img.shields.io/badge/Chrome%20应用商店-立即安装-blue?logo=googlechrome)](https://chromewebstore.google.com/detail/arxivpilot/nfnhldkeooijgilacfepgbnegboploee)
 ![Manifest V3](https://img.shields.io/badge/Manifest-V3-green)
 ![License](https://img.shields.io/badge/license-MIT-brightgreen)
 
@@ -35,9 +37,11 @@
 
 ## 安装
 
-### Chrome 应用商店
+### Chrome 应用商店（推荐）
 
-> 即将上线，敬请期待。
+**[➜ 前往 Chrome 应用商店安装 ArxivPilot](https://chromewebstore.google.com/detail/arxivpilot/nfnhldkeooijgilacfepgbnegboploee)**
+
+一键安装，无需开启开发者模式。
 
 ### 开发者模式（本地加载）
 
@@ -71,15 +75,13 @@ ArxivPilot/
 
 欢迎提交 Pull Request。如有重大改动，请先开 Issue 讨论。
 
-## 支持作者
+## 支持这个项目
 
-如果 ArxivPilot 帮你节省了时间，欢迎请作者喝杯咖啡，支持持续维护！
+ArxivPilot 完全免费开源，最好的支持方式不花一分钱：
 
-<img src="images/wechat.jpg" width="200" alt="微信赞赏码" />
-
-微信扫码打赏。如果觉得好用，也欢迎在 Chrome 应用商店给个 **五星好评** ⭐⭐⭐⭐⭐，帮助更多研究者发现这个工具。
-
-关注微信公众号 **特里斯丹**，获取更多实用工具。
+- ⭐ **[去 Chrome 应用商店打个五星好评](https://chromewebstore.google.com/detail/arxivpilot/nfnhldkeooijgilacfepgbnegboploee/reviews)** —— 这能帮助更多研究者发现这个工具
+- ⭐ **[给 GitHub 仓库点个 Star](https://github.com/weidafeng/ArxivPilot)**
+- 🐛 **[提交 Bug 或功能建议](https://github.com/weidafeng/ArxivPilot/issues)**
 
 ## License
 

@@ -37,12 +37,6 @@ const manualEl = document.getElementById("manual");
 const urlInput = document.getElementById("urlInput");
 const btn = document.getElementById("btn");
 
-document.getElementById("donateLink").addEventListener("click", (e) => {
-  e.preventDefault();
-  chrome.tabs.create({ url: chrome.runtime.getURL("donate.html") });
-  window.close();
-});
-
 chrome.tabs.query({ active: true, currentWindow: true }, ([tab]) => {
   const id = extractArxivId(tab.url);
   if (id) {

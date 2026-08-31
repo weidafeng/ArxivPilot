@@ -4,7 +4,7 @@
 
 A Chrome extension that opens multiple reading-assistance tabs for any arXiv paper with a single click.
 
-![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-blue?logo=googlechrome)
+[![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Install-blue?logo=googlechrome)](https://chromewebstore.google.com/detail/arxivpilot/nfnhldkeooijgilacfepgbnegboploee)
 ![Manifest V3](https://img.shields.io/badge/Manifest-V3-green)
 ![License](https://img.shields.io/badge/license-MIT-brightgreen)
 
@@ -37,9 +37,11 @@ A Chrome extension that opens multiple reading-assistance tabs for any arXiv pap
 
 ## Installation
 
-### From Chrome Web Store
+### From Chrome Web Store (recommended)
 
-> Coming soon.
+**[➜ Install ArxivPilot from the Chrome Web Store](https://chromewebstore.google.com/detail/arxivpilot/nfnhldkeooijgilacfepgbnegboploee)**
+
+One click, no developer mode needed.
 
 ### Load Unpacked (Developer Mode)
 
@@ -73,15 +75,13 @@ ArxivPilot/
 
 Pull requests are welcome. For major changes, please open an issue first.
 
-## Support
+## Support the Project
 
-If ArxivPilot saves you time, a coffee would mean a lot and help keep this project alive!
+ArxivPilot is free and open source. The best way to support it costs nothing:
 
-<img src="images/wechat.jpg" width="200" alt="WeChat Donate QR Code" />
-
-Scan with WeChat to support. If you find it useful, please also consider leaving a **5-star review** on the Chrome Web Store — it really helps others discover the extension.
-
-Follow for more tools: **WeChat Official Account: 特里斯丹**
+- ⭐ **[Leave a 5-star review on the Chrome Web Store](https://chromewebstore.google.com/detail/arxivpilot/nfnhldkeooijgilacfepgbnegboploee/reviews)** — it's what helps other researchers discover the extension.
+- ⭐ **[Star the repo on GitHub](https://github.com/weidafeng/ArxivPilot)**
+- 🐛 **[Report a bug or suggest a feature](https://github.com/weidafeng/ArxivPilot/issues)**
 
 ## License
 

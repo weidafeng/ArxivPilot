@@ -2,8 +2,8 @@
   "manifest_version": 3,
   "name": "ArxivPilot",
   "description": "One-click open translation, AI summary, and overview tabs for any arXiv paper. Supports abs/pdf/html URLs and manual input.",
-  "version": "1.0.0",
-  "homepage_url": "https://github.com/weidafeng",
+  "version": "1.0.1",
+  "homepage_url": "https://github.com/weidafeng/ArxivPilot",
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
