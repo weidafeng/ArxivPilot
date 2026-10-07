@@ -29,6 +29,12 @@ async function openTabs(id, arxivTabId = null) {
 
   await chrome.tabGroups.update(groupId, { title: id, color: "red" });
   chrome.tabs.update(newTabIds[newTabIds.length - 1], { active: true });
+
+  // Upgrade the group title from the arXiv id to the paper's short name.
+  // Must resolve before window.close() or the fetch gets cancelled.
+  const short = await getGroupTitle(id);
+  if (short && short !== id) await chrome.tabGroups.update(groupId, { title: short });
+
   window.close();
 }
 

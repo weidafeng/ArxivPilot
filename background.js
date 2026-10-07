@@ -1,3 +1,5 @@
+importScripts("arxiv-meta.js");
+
 const SITES = [
   { url: (id) => `https://hjfy.top/arxiv/${id}` },
   { url: (id) => `https://papers.cool/arxiv/${id}` },
@@ -16,6 +18,10 @@ async function openTabs(id, arxivTabId) {
   const groupId = await chrome.tabs.group({ tabIds: [arxivTabId, ...newTabIds] });
   await chrome.tabGroups.update(groupId, { title: id, color: "red" });
   chrome.tabs.update(newTabIds[newTabIds.length - 1], { active: true });
+
+  // Upgrade the group title from the arXiv id to the paper's short name.
+  const short = await getGroupTitle(id);
+  if (short && short !== id) await chrome.tabGroups.update(groupId, { title: short });
 }
 
 chrome.runtime.onInstalled.addListener(() => {
@@ -31,8 +37,8 @@ chrome.runtime.onInstalled.addListener(() => {
   });
 });
 
-chrome.contextMenus.onClicked.addListener((info, tab) => {
+chrome.contextMenus.onClicked.addListener(async (info, tab) => {
   if (info.menuItemId !== "arxivpilot-open") return;
   const id = extractArxivId(tab.url);
-  if (id) openTabs(id, tab.id);
+  if (id) await openTabs(id, tab.id);
 });
