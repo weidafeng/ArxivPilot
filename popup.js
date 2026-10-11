@@ -43,6 +43,10 @@ const manualEl = document.getElementById("manual");
 const urlInput = document.getElementById("urlInput");
 const btn = document.getElementById("btn");
 
+// Show the extension version (from manifest.json) in the footer.
+const verEl = document.getElementById("ver");
+if (verEl) verEl.textContent = "v" + chrome.runtime.getManifest().version;
+
 chrome.tabs.query({ active: true, currentWindow: true }, ([tab]) => {
   const id = extractArxivId(tab.url);
   if (id) {
